@@ -16,7 +16,7 @@ const IndexPage = () => (
       data-item-name="Bacon"
       data-item-price="3.00"
       data-item-weight="20"
-      data-item-url="localhost:8000/"
+      data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
       data-item-description="Some fresh bacon"
     >
         Buy bacon
