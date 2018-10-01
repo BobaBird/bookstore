@@ -1,20 +1,25 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'react-emotion';
+
+const HeaderWrapper = styled('div')`
+  background: #4286f4;
+  margin-bottom: 1.45rem;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+`;
+
+const HeaderContainer = styled('div')`
+  margin: 0 auto;
+  max-width: 1550px;
+  padding: 1.45rem 1.0875rem;
+`;
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
+  <HeaderWrapper>
+    <HeaderContainer>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -26,8 +31,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
-  </div>
-)
+    </HeaderContainer>
+  </HeaderWrapper>
+);
 
-export default Header
+export default Header;
