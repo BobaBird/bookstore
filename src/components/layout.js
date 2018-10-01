@@ -2,9 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import { css } from 'react-emotion';
 
 import Header from './header';
 import './layout.css';
+
+const PageStyles = css`
+font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -35,6 +41,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
+          className={PageStyles}
           style={{
             margin: '0 auto',
             maxWidth: 960,
