@@ -631,8 +631,11 @@ pre tt:after {
   left: 60% !important;
   padding: 0 !important;
 }
-.snip-layout .snip-active {
-  /* top: 0 !important; */
+.snip-table__item,
+.snip-product__name,
+.snip-table__cell--right,
+.snip-quantity-trigger {
+    color: cornflowerblue !important;
 }
 .snip-layout .snip-header__total {
   background: none !important;
@@ -651,4 +654,8 @@ pre tt:after {
 
 .snip-layout .snip-footer {
   background: #fff !important;
+}
+.snip-btn {
+  background: cornflowerblue !important;
+  color: #fff !important;
 }
