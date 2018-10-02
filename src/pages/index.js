@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 
 const CardContainer = styled('div')`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 1.45rem 1.0875rem 1.45rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <h1>Hi people</h1>
     <p>Welcome to my bookstore.</p>
-    <p>Now go buy siome books!</p>
+    <p>Now go buy some books!</p>
 
     <CardContainer>
       <Card>
@@ -85,51 +85,56 @@ const IndexPage = ({ data }) => (
         <button
           type="submit"
           className="snipcart-add-item"
-          data-item-id="2"
+          data-item-id="1"
           data-item-name="Book-1"
           data-item-price="3.00"
-          data-item-weight="20"
+          data-item-weight="2.5"
           data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
           data-item-description="A good book"
         >
             Buy book 1
         </button>
       </Card>
+    </CardContainer>
+    <CardContainer>
       <Card>
         <Img fluid={data.card.fluid} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-        <p>Book 2</p>
-        <p>$2.00</p>
+        <p>Book 1</p>
+        <p>$3.00</p>
         <button
           type="submit"
           className="snipcart-add-item"
-          data-item-id="2"
-          data-item-name="book-2"
-          data-item-price="2.00"
-          data-item-weight="20"
+          data-item-id="1"
+          data-item-name="Book-1"
+          data-item-price="3.00"
+          data-item-weight="2.5"
           data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
-          data-item-description="A bad book"
+          data-item-description="A good book"
         >
-            Buy book 2
-        </button>
-      </Card>
-      <Card>
-        <Img fluid={data.card.fluid} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-        <p>Book 3</p>
-        <p>$5.00</p>
-        <button
-          type="submit"
-          className="snipcart-add-item"
-          data-item-id="2"
-          data-item-name="book-3"
-          data-item-price="5.00"
-          data-item-weight="20"
-          data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
-          data-item-description="The best book"
-        >
-            Buy book 3
+            Buy book 1
         </button>
       </Card>
     </CardContainer>
+    <CardContainer>
+      <Card>
+        <Img fluid={data.card.fluid} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
+        <p>Book 1</p>
+        <p>$3.00</p>
+        <button
+          type="submit"
+          className="snipcart-add-item"
+          data-item-id="1"
+          data-item-name="Book-1"
+          data-item-price="3.00"
+          data-item-weight="2.5"
+          data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
+          data-item-description="A good book"
+        >
+            Buy book 1
+        </button>
+      </Card>
+    </CardContainer>
+
 
     <br />
     <br />

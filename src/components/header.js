@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
 
+
 const HeaderWrapper = styled('div')`
   background: #4286f4;
   margin-bottom: 1.45rem;
